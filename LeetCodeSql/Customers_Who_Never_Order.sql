@@ -1,6 +1,7 @@
 -- Problem: Customers Who Never Order
 -- LeetCode: https://leetcode.com/problems/customers-who-never-order/
-
+-- 
+https://leetcode.com/problems/customers-who-never-order/descriptn/
 -- Write your SQL solution below:
 
 -- select c.name as Customers
@@ -22,3 +23,7 @@ left join orders o
     on c.id = o.customerId
 group by c.id, c.name
 having count(o.id) = 0;
+
+
+
+
